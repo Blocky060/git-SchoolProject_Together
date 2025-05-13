@@ -2,12 +2,21 @@
 #pip install groq
 
 import subprocess
-subprocess.check_call('pip install groq')
+import sys
+
+def install_groq():
+
+    installed_packages = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze']).decode('utf-8')
+    
+    if 'groq' in installed_packages:
+        print("groq is already installed.")
+    else:
+        print("groq not found. Installing...")
+        subprocess.check_call('pip install groq')
 
 import os
 from groq import Groq
 
-# 키
 
 def AI_grop(answer):
   GROQ_API_KEY="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"

@@ -1,11 +1,16 @@
 import ai1_function
 import ai2_function
 
-
-#a = (ai1_function.AI_grop('Hello'))
-#print (a)
-#a = "1+4 = 8"
-#print (ai2_function.AI_gemini("Hello"))
+ai1_function.install_groq()
+ai2_function.install_google_generativeai()
 
 
-#print(ai2_function.AI_gemini("지금 한국기준 날씨가 어떄?"))
+print ('\n')
+print ('\n')
+
+print (ai1_function.AI_grop('Hello'))
+
+print ('\n')
+
+print (ai2_function.AI_gemini("Hello"))
+
