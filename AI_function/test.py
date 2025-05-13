@@ -12,5 +12,5 @@ print (ai1_function.AI_grop('Hello'))
 
 print ('\n')
 
-print (ai2_function.AI_gemini("Hello"))
+print (ai2_function.AI_gemini("안녕"))
 
