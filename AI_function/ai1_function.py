@@ -21,6 +21,7 @@ import os
 
 
 def AI_grop(answer):
+  from groq import Groq
   GROQ_API_KEY="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"
 
   # Groq 클라이언트 초기화

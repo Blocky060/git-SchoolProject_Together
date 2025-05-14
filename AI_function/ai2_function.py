@@ -20,6 +20,7 @@ import os
 
 
 def AI_gemini(answer):
+    import google.generativeai as genai
     question = answer
     GOOGLE_API_KEY = "AIzaSyCX4MibuQZb7GEDj16N1AMdtIjD1oJmbxU"
     genai.configure(api_key=GOOGLE_API_KEY)
