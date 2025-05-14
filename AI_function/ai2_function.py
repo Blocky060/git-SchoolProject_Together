@@ -1,10 +1,11 @@
 #api key      AIzaSyCX4MibuQZb7GEDj16N1AMdtIjD1oJmbxU
 #python3 -m pip install google-generativeai
 
-import subprocess
-import sys
+
 
 def install_google_generativeai():
+    import subprocess
+    import sys
 
     installed_packages = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze']).decode('utf-8')
     
@@ -16,10 +17,10 @@ def install_google_generativeai():
         subprocess.check_call('python3 -m pip install google-generativeai')
         import google.generativeai as genai
 
-import os
 
 
 def AI_gemini(answer):
+    import os
     import google.generativeai as genai
     question = answer
     GOOGLE_API_KEY = "AIzaSyCX4MibuQZb7GEDj16N1AMdtIjD1oJmbxU"

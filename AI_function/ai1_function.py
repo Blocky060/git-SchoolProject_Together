@@ -1,10 +1,11 @@
 #api key     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
 #pip install groq
 
-import subprocess
-import sys
+
 
 def install_groq():
+    import subprocess
+    import sys
 
     installed_packages = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze']).decode('utf-8')
     
@@ -16,11 +17,11 @@ def install_groq():
         subprocess.check_call('pip install groq')
         from groq import Groq
 
-import os
 
 
 
 def AI_grop(answer):
+  import os
   from groq import Groq
   GROQ_API_KEY="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"
 
