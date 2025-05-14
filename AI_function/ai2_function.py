@@ -10,12 +10,13 @@ def install_google_generativeai():
     
     if 'google-generativeai' in installed_packages:
         print("google-generativeai is already installed.")
+        import google.generativeai as genai
     else:
         print("google-generativeai not found. Installing...")
         subprocess.check_call('python3 -m pip install google-generativeai')
+        import google.generativeai as genai
 
 import os
-import google.generativeai as genai
 
 
 def AI_gemini(answer):

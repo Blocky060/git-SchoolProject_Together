@@ -10,12 +10,14 @@ def install_groq():
     
     if 'groq' in installed_packages:
         print("groq is already installed.")
+        from groq import Groq
     else:
         print("groq not found. Installing...")
         subprocess.check_call('pip install groq')
+        from groq import Groq
 
 import os
-from groq import Groq
+
 
 
 def AI_grop(answer):
