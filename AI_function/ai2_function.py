@@ -14,7 +14,7 @@ def install_google_generativeai():
         import google.generativeai as genai
     else:
         print("google-generativeai not found. Installing...")
-        subprocess.check_call('python3 -m pip install google-generativeai')
+        subprocess.check_call('python -m pip install google-generativeai')
         import google.generativeai as genai
 
 
