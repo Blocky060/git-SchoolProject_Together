@@ -1,7 +1,7 @@
 #api key      AIzaSyCX4MibuQZb7GEDj16N1AMdtIjD1oJmbxU
 #python3 -m pip install google-generativeai
 
-
+import google.generativeai as genai
 
 def install_google_generativeai():
     import subprocess

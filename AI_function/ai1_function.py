@@ -19,11 +19,10 @@ def install_groq():
 
 
 
-
 def AI_grop(answer):
   import os
   from groq import Groq
-  GROQ_API_KEY="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"
+  GROQ_API_KEY="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"
 
   # Groq 클라이언트 초기화
   client = Groq(
