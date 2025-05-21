@@ -24,7 +24,7 @@ def mainfuction (question) :
     print(ai_gemini_answer)
     print(ai_groq_answer)
     
-    return (ai_gemini_answer)
+    return (ai_gemini_answer) # return으로 최종 대답 output
     #정확도 테스트 및 어떻게 질문해야 하는지 검토 필요
     #더 나은 대답을 위해 단지 옳고 그름 뿐 아니라 더 좋은 대답을 요구하는 식으로도 이용 가능, 하지만 GROQ는 AIPKEY재생성, 영어로 질문이 필요함
     #함수화 생각중
