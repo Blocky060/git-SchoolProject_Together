@@ -1,4 +1,4 @@
-#api key     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
+#api key     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
 #pip install groq
 
 
@@ -22,7 +22,7 @@ def install_groq():
 def AI_grop(answer):
   import os
   from groq import Groq
-  GROQ_API_KEY="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"
+  GROQ_API_KEY="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"
 
   # Groq 클라이언트 초기화
   client = Groq(
