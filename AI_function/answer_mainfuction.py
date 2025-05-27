@@ -9,15 +9,15 @@ def mainfuction (question) :
     
 
     first_ai_gemini_answer = (ai_gemini_function.AI_gemini(question))
-    feed_back_ai_groq_answer = (ai_groq_function.AI_groq('''You are responsible for reviewing and giving feedback to answers written by other AIs
-        If the answer is not appropriate or there is anything to improve, please give me specific feedback
+    feed_back_ai_groq_answer = (ai_groq_function.AI_groq('''You are responsible for reviewing and needing to make sure that the content is true and giving feedback to answers written by other AIs
+        If the answer is not appropriate or not true or there is anything to improve, please give me specific feedback
         "If you think ai's answer is appropriate, tell me why it's a good answer, and if you have a better answer or direction, please suggest that as well.'''
         + '\nquestion : ' + question + '\nanswer : ' + first_ai_gemini_answer))
     nowrepeat = 1
     while True :
         upgrade_ai_gemini_answer = (ai_gemini_function.AI_gemini("질문 : " + question + "\n너의 첫 답변 : " + first_ai_gemini_answer + "\n피드백 : " + feed_back_ai_groq_answer + "\n위 내용들을 참고해서 피드백에 맞게 너의 답변을 수정해서 정확한 답변만 출려해줘"))
-        seconde_feed_back_ai_groq_answer = ai_groq_function.AI_groq('''You are responsible for reviewing and giving feedback to answers written by other AIs
-        If the answer is not appropriate or there is anything to improve, please give me specific feedback
+        seconde_feed_back_ai_groq_answer = ai_groq_function.AI_groq('''You are responsible for reviewing and needing to make sure that the content is true and giving feedback to answers written by other AIs
+        If the answer is not appropriate or not true or there is anything to improve, please give me specific feedback
         If you think ai's answer is appropriate, just say "OK" exactly''' + '\nquestion : ' + question + '\nanswer : ' + upgrade_ai_gemini_answer)
         if (seconde_feed_back_ai_groq_answer == 'OK') :
             break
