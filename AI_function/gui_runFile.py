@@ -18,7 +18,8 @@ def get_text():
     global question
     question = question_text.get("1.0", END)
     question_text.delete("1.0", END)
-    answer_text.insert(END, answer_mainfuction.mainfuction(question))
+    result, times = answer_mainfuction.mainfuction(question)
+    answer_text.insert(END, result + "\n이 답변은 %s번의 상호 검증으로 확인되었습니다."%(times))
     question_text.insert(END, "질문 : ")
     
     
