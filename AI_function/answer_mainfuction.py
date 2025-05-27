@@ -19,7 +19,7 @@ def mainfuction (question) :
 
     #알고리즘 초안 // 문제 많음 단지 테스트용
     ai_gemini_answer = (ai_gemini_function.AI_gemini(question))
-    ai_groq_answer = (ai_groq_function.AI_grop('can you check this is real? if real you should say "YES" if not real you should say "NO"' + 'question : ' + question + 'answer : ' + ai_gemini_answer))
+    ai_groq_answer = (ai_groq_function.AI_groq('can you check this is real? if real you should say "YES" if not real you should say "NO"' + 'question : ' + question + 'answer : ' + ai_gemini_answer))
 
     print(ai_gemini_answer)
     print(ai_groq_answer)
