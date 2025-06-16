@@ -1,5 +1,5 @@
 
-#api key     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
+#api key     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 / 주기적인 교체 필요. 무료버전 이용중
 #pip install groq
 
 
