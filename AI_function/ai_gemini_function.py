@@ -22,8 +22,9 @@ def install_google_generativeai():
 def AI_gemini(answer):
     import os
     import google.generativeai as genai
+    from api_key import gemini_api_key
     question = answer
-    GOOGLE_API_KEY = "AIzaSyCX4MibuQZb7GEDj16N1AMdtIjD1oJmbxU"
+    GOOGLE_API_KEY = gemini_api_key
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')
 
